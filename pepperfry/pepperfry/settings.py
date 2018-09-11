@@ -64,9 +64,11 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'pepperfry.pipelines.PepperfryPipeline': 300,
-# }
+ITEM_PIPELINES = {
+    'pepperfry.pipelines.PepperfryImagesPipeline': 1,
+}
+# IMAGES_MIN_HEIGHT = 100
+# IMAGES_MIN_WIDTH = 100
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -89,3 +91,7 @@ ROBOTSTXT_OBEY = False
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 DUPEFILTER_CLASS = 'scrapy.dupefilters.BaseDupeFilter'
+IMAGES_STORE = 'images_store'
+IMAGES_URLS_FIELD = 'image_urls'
+IMAGES_RESULT_FIELD = 'images'
+MEDIA_ALLOW_REDIRECTS = True
