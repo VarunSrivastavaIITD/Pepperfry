@@ -22,3 +22,5 @@ obj/**
 tmp/**
 .python-version
 .vscode
+data
+pepperfry.json
