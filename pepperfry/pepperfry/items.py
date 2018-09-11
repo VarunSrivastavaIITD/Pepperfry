@@ -8,7 +8,7 @@
 import scrapy
 
 
-class PepperfryItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class PepperfryImage(scrapy.Item):
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
+    item_dir = scrapy.Field()
