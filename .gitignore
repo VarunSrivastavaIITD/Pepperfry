@@ -24,3 +24,5 @@ tmp/**
 .vscode
 data
 pepperfry.json
+Pepperfry_data
+*.jl
